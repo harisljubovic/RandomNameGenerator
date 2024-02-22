@@ -84,4 +84,19 @@ h1{
     align-items: center;
     font-size: clamp(3rem, 0.3043rem + 3.4783vw, 3.5rem);
     text-transform: uppercase;
+    
+}
+
+.blankNameStyle {
+    border: 6px solid black;
+}
+
+.femaleNameStyle {
+    border: 6px solid rgb(245, 23, 127);
+    color: rgb(245, 23, 127);
+}
+
+.maleNameStyle {
+    border: 6px solid rgb(4, 115, 185);
+    color: rgb(4, 115, 185);
 }

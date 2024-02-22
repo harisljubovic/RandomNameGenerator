@@ -17,7 +17,12 @@
       <h1>NAME GENERATOR</h1>
     </div>
     <div id="genderWrapper">
-      <button type="button" id="maleName">
+      <button
+        onclick="generateName('male')"
+        type="button"
+        id="maleName"
+        value="male"
+      >
         <img
           src="./img/boy.png"
           alt=""
@@ -25,7 +30,12 @@
         /><br />
         <span class="btn-gender-sub-male">Male</span>
       </button>
-      <button type="button" id="femaleName">
+      <button
+        onclick="generateName('female')"
+        type="button"
+        id="femaleName"
+        value="female"
+      >
         <img
           src="./img/girl.png"
           alt=""
@@ -34,7 +44,7 @@
         <span class="btn-gender-sub-female">Female</span>
       </button>
     </div>
-    <div id="result_name">Name</div>
+    <div id="result_name" class="blankNameStyle">Name</div>
 
     <script src="./script.js"></script>
     <script

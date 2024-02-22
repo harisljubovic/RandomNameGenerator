@@ -100,7 +100,7 @@ const maleNames = [
   "Fran",
 ];
 
-const femaleName = [
+const femaleNames = [
   "Sara",
   "Merjem",
   "Asja",
@@ -201,3 +201,24 @@ const femaleName = [
   "Alma",
   "Ines",
 ];
+
+function generateName(gender) {
+  const randomMaleName = `${
+    maleNames[Math.floor(Math.random() * maleNames.length)]
+  }`;
+  const randomFemaleName = `${
+    femaleNames[Math.floor(Math.random() * femaleNames.length)]
+  }`;
+
+  const resultName = document.getElementById("result_name");
+  resultName.innerHTML =
+    gender === `female` ? randomFemaleName : randomMaleName;
+
+  if (gender == "female") {
+    resultName.classList.remove("maleNameStyle");
+    resultName.classList.add("femaleNameStyle");
+  } else {
+    resultName.classList.remove("femaleNameStyle");
+    resultName.classList.add("maleNameStyle");
+  }
+}
