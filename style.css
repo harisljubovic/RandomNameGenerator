@@ -32,7 +32,7 @@ h1{
 #maleName, #femaleName {
     background: none;
     border: none;
-    width: 40%;
+    width: max-content;
     margin-bottom: 30px;
 }
 
